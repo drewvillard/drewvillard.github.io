@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*Author-Drew*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    flex: 1 0 auto;
+}

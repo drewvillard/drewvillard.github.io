@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/*
+        *Author-Drew
+        *
+        */
+
+@media only screen and (min-width:768px) {
+    .resume {
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33%;
+        align-content: center;
+        row-gap: 10px;
+        gap: 10px;
+    }
+    .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        /* Adjust as needed */
+        width: 100%;
+    }
+    .arrow-btn {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: #ffffff;
+        /* Background color */
+        color: #000000;
+        /* Text color */
+        border: 1px solid #000000;
+        /* Border color */
+        padding: 10px;
+        /* Adjust padding for desired height */
+        cursor: pointer;
+        outline: none;
+        z-index: 1;
+    }
+    #prevBtn {
+        left: 10px;
+    }
+    #nextBtn {
+        right: 10px;
+    }
+    #Education {
+        grid-row: 1;
+        grid-column: 1;
+        border: dashed violet;
+    }
+    #Education p {
+        margin: 0;
+        font-size: 2em;
+    }
+    #Experience {
+        margin-left: 5px;
+        margin-right: 25px;
+        grid-row: 2/4;
+        /* Adjust the row position */
+        grid-column: 1/4;
+        /* Adjust the column position */
+        border: 2px solid;
+        border-left-color: red;
+        border-top-color: blue;
+        border-right-color: yellow;
+    }
+    #Experience p {
+        margin: 0;
+        font-size: 2em;
+    }
+    #Experience h4 {
+        font-weight: normal;
+    }
+    #Skills {
+        grid-column: 2;
+        grid-row: 1;
+        border-radius: 10px;
+        border-style: solid solid none;
+        box-shadow: 5px 5px rebeccapurple;
+    }
+    #Skills p {
+        margin: 0;
+        font-size: 2em;
+    }
+    #Skills ol {
+        padding: 20px;
+    }
+    .card-list {
+        display: flex;
+        padding: 25px 0px;
+        list-style: none;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory;
+    }
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 calc(33.333% - 20px);
+        /* Adjust the width as needed */
+        margin-right: 20px;
+        /* Adjust the margin between cards */
+        padding: 10px;
+        /* Adjust the padding inside the cards */
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+        scroll-snap-align: center;
+        transition: all 0.2s;
+    }
+    #lorem_nonsense {
+        display: flex;
+        flex-direction: row;
+    }
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 0;
+        padding: 0;
+    }
+    /*HEADER NAVIGATION*/
+    nav ol li {
+        width: 20%;
+        font-size: 1em;
+        float: left;
+        text-align: center;
+        background-color: #5D737E;
+        list-style: none;
+        margin: 0;
+    }
+    h2 {
+        text-align: left;
+        color: #87BBA2;
+        font-size: 2em;
+    }
+    p {
+        color: #87BBA2;
+        text-align: left;
+        font-size: 1.5em;
+    }
+    /*TECH INTEREST LIST*/
+    .interests li {
+        margin-left: 20px;
+        color: #87BBA2;
+        text-align: left;
+    }
+    .Goals {
+        font-size: 2em;
+        color: black;
+        padding: 10px;
+    }
+    .skills_text h2 {
+        text-align: left;
+    }
+    .card-img {
+        max-width: 100%;
+    }
+    .card-img:hover {
+        filter: brightness(50%);
+    }
+    .small-txt {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+    div.card-overlay {
+        z-index: 2;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        visibility: hidden;
+    }
+    .card-img-link:hover+div.card-overlay {
+        visibility: visible;
+    }
+    #author-picture {
+        position: relative;
+    }
+    #author-picture img {
+        height: 300px;
+        width: 60%;
+        top: 0;
+    }
+    #author-picture .button {
+        position: absolute;
+        top: 265px;
+        right: 415px;
+        background-color: black;
+        padding: 8px 18px;
+    }
+    .resume-top h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .resume {
+        display: grid;
+        grid-template-columns: 100%;
+        align-content: center;
+        margin: auto;
+    }
+    #Education {
+        grid-row: 1/5;
+        border: solid black;
+    }
+    #Experience {
+        border: 2px dashed;
+        border-left-color: red;
+        border-bottom-color: green;
+        border-right-color: black;
+    }
+    #Skills {
+        border-radius: 10px;
+        box-shadow: 5px 5px rebeccapurple;
+        border: solid;
+    }
+    body {
+        color: white;
+    }
+    nav ol li {
+        width: 20%;
+        font-size: 1em;
+        padding: 10px 0;
+        display: block;
+        float: left;
+        text-align: center;
+        background-color: rgb(30, 30, 52);
+    }
+}

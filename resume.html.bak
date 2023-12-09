@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> this is a page </title>
+    </head>
+	
+<h1> Resume</h1>
+<nav>
+	<ol>
+		<li><a href="index.html"> HomePage</a>  </li>
+		<li><a href="resume.html"> resume</a> </li>
+		<li><a href="contact.html"> contact</a></li>
+		<li><a href="goals.html"> goals</a></li>
+		<li><a href="skills.html"> skills</a></li>
+	</ol>
+</nav>
+<h2> This is some text</h2>
+<section id="someText">
+	<h2>this is some text</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet aliquam odio non efficitur. 
+		<br>Suspendisse potenti. Aliquam imperdiet quam eu euismod sollicitudin. Quisque non arcu quis tortor sollicitudin 
+		<br>imperdiet. Nullam vel massa volutpat, laoreet ex eget, tempor enim. Sed at pharetra nunc.
+		<br>Nullam ultrices ultricies erat, at rutrum magna tempus quis. Aenean fermentum, sem non sodales vulputate, felis nulla consequat
+		ex, vitae
+		<br>rutrum leo velit sed ante. Sed viverra maximus libero, a semper metus gravida at. Fusce neque nulla, lacinia ac dictum eget,
+		<br>tempor at velit.<br>
+		<img alt="donut fingers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpJ8uNhyZIlICllp2muIRrZ32lBc9e14Iiw&usqp=C">
+</section>
+</html>	

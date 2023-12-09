@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<!--Author Drew Villard-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="portfolio_base.css">
+<link rel="stylesheet" href="portfolio_layout.css">
+<link rel="stylesheet" href="portfolio_forms.css">
+
+<title>Eportfolio</title>
+
+<nav>
+    <ol>
+        <li><a href="index.html"> HomePage</a> </li>
+        <li><a href="resume.html"> Resume</a> </li>
+        <li><a href="contact.html"> Contact</a></li>
+        <li><a href="Portfolio.html"> Portfolio</a></li>
+        <li><a href="skills.html"> Skills</a></li>
+    </ol>
+</nav>
+
+<section id="someText">
+
+    <h2>Contact Me</h2>
+    <!-- Source: https://medium.com/@egwuchinedu69/how-to-send-contact-form-data-to-an-email-address-without-server-side-language-adeec579c586 -->
+    <form method="POST" name="contact" data-netlify="true">
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="Firstname" placeholder="Your name.." required>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="Lastname" placeholder="Your last name.." required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="Your email address.." required>
+        <label for="message">Message</label>
+        <textarea id="message" name="Subject" placeholder="Write something.." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+<p>Alternativley you can send send an email to me at Drewvillard06@gmail.com</p>
+</body>
+
+
+</html>

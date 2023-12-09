@@ -1,0 +1,89 @@
+    @charset "UTF-8";
+    /*
+*Author- Drew Villard
+*
+*/
+    
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #F0F7EE;
+    }
+    
+    a:hover {
+        color: skyblue;
+    }
+    
+    a:active {
+        color: darkblue;
+    }
+    
+    a:link {
+        color: #FFF07C;
+    }
+    
+    a:visited {
+        color: #FFF07C;
+    }
+    
+    h2 {
+        margin-left: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    img {
+        float: right;
+    }
+    
+    h1 {
+        font-family: "Calibri, sans-serif";
+        text-align: left;
+        font-size: 1.5em;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 1.6em;
+    }
+    
+    .flex-container div {
+        border-style: solid solid none;
+    }
+    
+    .flex-container div:last-of-type {
+        border: solid;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    
+    main {
+        flex: 1 0 auto;
+    }
+    
+    header {
+        text-align: left;
+        color: #87BBA2;
+        font-size: 2em;
+    }
+    
+    body,
+    ol,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
