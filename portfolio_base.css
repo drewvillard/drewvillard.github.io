@@ -10,21 +10,31 @@
         height: 100%;
         background-color: #F0F7EE;
     }
-    
-    a:hover {
-        color: skyblue;
-    }
-    
-    a:active {
-        color: darkblue;
-    }
+    /* Unvisited link */
     
     a:link {
-        color: #FFF07C;
+        color: #FFA500;
+        /* Gold or a shade of yellow */
+        text-decoration: none;
+        /* Remove underlines by default */
     }
+    /* Visited link */
     
     a:visited {
-        color: #FFF07C;
+        color: #FFA500;
+        /* Maintain the same color for consistency */
+    }
+    /* Hover effect */
+    
+    a:hover {
+        color: #87CEEB;
+        /* Light sky blue on hover */
+    }
+    /* Active (clicked) link */
+    
+    a:active {
+        color: #1E90FF;
+        /* Dark blue on active/clicked state */
     }
     
     h2 {

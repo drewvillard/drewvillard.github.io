@@ -165,14 +165,13 @@
         padding-top: 0.5rem;
         font-size: 1rem;
     }
-    div.card-overlay {
+    .card-overlay {
         z-index: 2;
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         pointer-events: none;
         display: flex;
         flex-direction: column;
@@ -180,6 +179,10 @@
         justify-content: center;
         font-size: 1.5rem;
         visibility: hidden;
+        width: 100%;
+        /* Adjust the width as needed */
+        text-align: center;
+        /* Center the text horizontally */
     }
     .card-img-link:hover+div.card-overlay {
         visibility: visible;
@@ -195,12 +198,18 @@
     #author-picture .button {
         position: absolute;
         top: 265px;
-        right: 415px;
+        right: 0;
         background-color: black;
         padding: 8px 18px;
     }
     .resume-top h2 {
         text-align: center;
+    }
+    #photo-credit {
+        position: absolute;
+        top: 320px;
+        right: 5px;
+        background-color: white;
     }
 }
 
