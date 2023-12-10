@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Author Drew Villard-->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="portfolio_base.css">
-<link rel="stylesheet" href="portfolio_layout.css">
 
-<title> Resume Page </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_base.css">
+    <link rel="stylesheet" href="portfolio_layout.css">
+    <link rel="stylesheet" href="resume_style.css">
+    <!-- Add a link to your custom styles -->
+    <title>Resume Page</title>
+</head>
 
 <body>
     <nav>
         <ol>
-            <li><a href="index.html">HomePage</a> </li>
-            <li><a href="resume.html">Resume</a> </li>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="Portfolio.html">Portfolio</a></li>
             <li><a href="skills.html">Skills</a></li>
         </ol>
     </nav>
-
     <section class="resume-top">
-        <h2>Drew Villard <br> Dartmouth, Nova Scotia<br> drewvillard06@gmail.com
-            <br>
-        </h2>
+        <span>
+            <h2>Drew Villard <br> Dartmouth, Nova Scotia<br> drewvillard06@gmail.com<br></h2>
+        </span>
     </section>
     <div class="resume">
-
-        <section id="Education">
-            <p>Education</p>
-            <h3>Nova Scotia Community College</h3> IT Programming Diploma Jan 2022 - Current | Halifax, Nova Scotia
-            <h3>Saint Mary's University</h3>
-            Bachelor in Computer Science<br> Janyary 2020 - May 2021| Halifax Nova Scotia
+        <section id="Education" class="cv-category">
+            <div>
+                <h2 class="cv-category first element">Education</h2>
+                <div class="cv-category content">
+                    <span class="school">Nova Scotia Community College</span>
+                    <span class="program">IT Programming Diploma Jan 2022 - Current</span>
+                    <span class="where"> Halifax Nova Scotia</span>
+                </div>
+                <div class="cv-category content">
+                    <span class="school">Saint Mary's University</span>
+                    <span class="program">Bachelor in Computer Science January 2020 - May 2021</span>
+                    <span class="where"> Halifax Nova Scotia</span>
+                </div>
+            </div>
         </section>
+        <section id="Experience" class="cv-category">
+            <h2 class="cv-category first element">Experience</h2>
+            <div class="cv-category content">
+                <span class="Location">Labourer - Charlottetown, PEI</span>
+                <span class="role">July 2019 – September 2019</span>
+                <span class="desc">During my experience as a laborer, I demonstrated a versatile work ethic by effectively balancing two key aspects of the role: taking clear direction from my supervisor and showcasing the ability to independently initiate and complete
+                            tasks.
+                        </span>
+            </div>
+            <div class="cv-category content">
+                <span class="Location">Christmas Discounters - Charlottetown, PEI</span>
+                <span class="role">Store Clerk (October 2018 – January 2019)</span>
+                <span class="desc">As a stock clerk, I ensured optimal store organization by stocking shelves with new products and managing inventory. Additionally, I provided excellent customer service at the register, contributing to a positive shopping experience.</span>
+            </div>
+            <div class="cv-category content">
+                <div>
+                    <span class="Location">CO-OP Papa Joes-Charlottetown, PEI</span>
+                    <span class="role">Dishwasher (January 2019 - May 2019)</span>
+                    <span class="desc">While formally designated as a dishwasher, I also took on responsibilities as a prep cook, cultivating valuable experience in thriving under pressure and delivering timely, focused results. This dual role enhanced my adaptability and
+                            efficiency in a fast-paced kitchen environment.
+                        </span>
+
+                </div>
+
         </section>
-        <section id="Skills">
-            <p>Employability Traits</p>
-            <ol>
-                <li>Punctual</li>
-                <li>Fast learner</li>
-                <li>Strong team player</li>
-                <li>Works well under pressure</li>
+        <section id="Skills" class="cv-category">
 
-            </ol>
-
+            <h2 class="cv-category first element">Employability Traits</h2>
+            <span class="cv-category content">Punctual</span>
+            <span class="cv-category content">Fast learner</span>
+            <span class="cv-category content">Strong team player</span>
+            <span class="cv-category content">Works well under pressure</span>
+            </div>
         </section>
-        <section id="Experience">
-            <p>Labourer - Charlottetown, PEI</p>
-            <h3>July 2019 – September 2019</h3>
-            <h4>During my experience as a laborer, I demonstrated a versatile work ethic by effectively balancing two key aspects of the role: taking clear direction from my supervisor and showcasing the ability to independently initiate and complete tasks..<br></h4>
-            <p>Christmas Discounters - Charlottetown, PEI</p>
-            <h3> Store Clerk (October 2018 – January 2019)</h3>
-            <h4>As a stock clerk, I ensured optimal store organization by stocking shelves with new products and managing inventory. Additionally, I provided excellent customer service at the register, contributing to a positive shopping experience.</h4>
-            <p>CO-OP Papa Joes-Charlottetown, PEI</p>
-            <h3> Dishwasher (January 2019 - May 2019)</h3>
-            <h4>While formally designated as a dishwasher, I also took on responsibilities as a prep cook, cultivating valuable experience in thriving under pressure and delivering timely, focused results. This dual role enhanced my adaptability and efficiency
-                in a fast-paced kitchen environment.</h4>
 
 
 
 
-    </div>
 </body>
 
 </html>

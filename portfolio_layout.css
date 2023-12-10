@@ -6,7 +6,7 @@
         */
 
 @media only screen and (min-width:768px) {
-    .resume {
+    /* .resume {
         display: grid;
         column-gap: 10px;
         grid-template-columns: 50% 50%;
@@ -14,7 +14,7 @@
         align-content: center;
         row-gap: 10px;
         gap: 10px;
-    }
+    } */
     .scroll-container {
         overflow-x: auto;
         white-space: nowrap;
@@ -44,7 +44,7 @@
     #nextBtn {
         right: 10px;
     }
-    #Education {
+    /* #Education {
         grid-row: 1;
         grid-column: 1;
         border: dashed violet;
@@ -57,9 +57,8 @@
         margin-left: 5px;
         margin-right: 25px;
         grid-row: 2/4;
-        /* Adjust the row position */
         grid-column: 1/4;
-        /* Adjust the column position */
+      
         border: 2px solid;
         border-left-color: red;
         border-top-color: blue;
@@ -86,6 +85,7 @@
     #Skills ol {
         padding: 20px;
     }
+    */
     .card-list {
         display: flex;
         padding: 25px 0px;
@@ -106,7 +106,7 @@
         background: var(--white);
         border-radius: 12px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         transition: all 0.2s;
     }
     #lorem_nonsense {
@@ -134,12 +134,13 @@
     h2 {
         text-align: left;
         color: #87BBA2;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     p {
+        margin-left: 10px;
         color: #87BBA2;
         text-align: left;
-        font-size: 1.5em;
+        font-size: 1em;
     }
     /*TECH INTEREST LIST*/
     .interests li {
@@ -203,7 +204,9 @@
         padding: 8px 18px;
     }
     .resume-top h2 {
+        margin-bottom: 0px;
         text-align: center;
+        font-size: 50px;
     }
     #photo-credit {
         position: absolute;

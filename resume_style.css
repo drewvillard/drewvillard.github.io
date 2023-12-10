@@ -1,0 +1,58 @@
+.resume {
+    display: block;
+    margin-top: 10px;
+}
+
+.cv-category div {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cv-category h2 {
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 50px;
+}
+
+.cv-category .content {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.cv-category first element {
+    margin-top: 0px;
+}
+
+.cv-category span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.school,
+.program,
+.where {
+    /* thicker underline */
+    padding-bottom: 5px;
+    /* adjust as needed */
+    font-size: 18px;
+    font-weight: bold;
+    width: 32%;
+    /* adjust as needed */
+}
+
+.Location,
+.role {
+    width: 48%;
+    color: #87BBA2;
+    ;
+}
+
+.desc {
+    padding-top: 5px;
+}
