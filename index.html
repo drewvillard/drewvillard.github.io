@@ -7,13 +7,16 @@
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="portfolio_base.css">
 <link rel="stylesheet" href="portfolio_layout.css">
-<script type="text/javascript" src="brython.js"></script>
-<script type="text/javascript" src="brython_stdlib.js"></script>
+
 
 <title> Home </title>
 
 
 <head>
+
+</head>
+
+<body>
     <nav>
         <ol>
             <li><a href="index.html">HomePage</a> </li>
@@ -23,21 +26,19 @@
             <li><a href="skills.html">Skills</a></li>
         </ol>
     </nav>
-</head>
-
-<body onload="brython(1)">
     <main>
-        <section id="author-picture">
-            <img src="./Unsplash portfolio filler/authFill.jpg" alt="AuthFill" #author-picture { margin: 0 auto; position: relative; width: 66%; } />
-            <button class="button">
-                <a href="contact.html">Contact Me</a></button>
-            </a>
+        <section id="author-picture" class="image-container">
+            <img src="./Unsplash portfolio filler/authFill.jpg" alt="AuthFill">
             <div id="photo-credit">
                 Photo by <a href="https://unsplash.com/@nathfx?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">natasha</a> on
                 <a href="https://unsplash.com/photos/body-of-water-across-city-buildings-093I0j4A73Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </div>
+            <div class="home-overlay"></div>
+            <div class="image-text">
+                <h3>Drew Villard</h3>
+                <p>2nd year IT Programming Student</p>
+            </div>
         </section>
-
 
 
         <section id="someText">
