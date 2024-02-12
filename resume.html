@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="portfolio_base.css">
     <link rel="stylesheet" href="portfolio_layout.css">
     <link rel="stylesheet" href="resume_style.css">
+    <style>
+        /* Define the gradient background */
+        
+        body {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            /* Adjust the size of each gradient */
+            background-position: left, right;
+            /* Position the gradients on each side */
+        }
+    </style>
     <!-- Add a link to your custom styles -->
     <title>Resume Page</title>
-</head>
-
-<body>
     <nav>
         <ol>
             <li><a href="index.html">HomePage</a></li>
@@ -21,6 +30,10 @@
             <li><a href="skills.html">Skills</a></li>
         </ol>
     </nav>
+</head>
+
+<body class="resume-body">
+
     <section class="resume-top">
         <span>
             <h2>Drew Villard <br> Dartmouth, Nova Scotia<br> drewvillard06@gmail.com<br></h2>

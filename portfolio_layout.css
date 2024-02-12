@@ -91,23 +91,27 @@
         padding: 25px 0px;
         list-style: none;
         overflow-x: auto;
-        /* Enable horizontal scrolling */
         scroll-snap-type: x mandatory;
+        -webkit-scroll-snap-type: x mandatory;
     }
     .card-item {
         display: flex;
         flex-direction: column;
         flex: 0 0 calc(33.333% - 20px);
-        /* Adjust the width as needed */
         margin-right: 20px;
-        /* Adjust the margin between cards */
         padding: 10px;
-        /* Adjust the padding inside the cards */
-        background: var(--white);
+        background: white;
         border-radius: 12px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-        scroll-snap-align: start;
+        scroll-snap-align: left;
         transition: all 0.2s;
+        /* Vendor prefixes */
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+        -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+        -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+        /* ... other styles ... */
+        scroll-snap-align: left;
+        -webkit-scroll-snap-align: left;
     }
     #lorem_nonsense {
         display: flex;
@@ -124,28 +128,28 @@
     /*HEADER NAVIGATION*/
     nav ol li {
         width: 20%;
-        font-size: 1em;
+        font-size: 2em;
         float: left;
         text-align: center;
-        background-color: #5D737E;
+        background-color: #122a5e;
         list-style: none;
         margin: 0;
     }
     h2 {
         text-align: left;
-        color: #87BBA2;
-        font-size: 1.5em;
+        color: black;
+        font-size: 3em;
     }
     p {
         margin-left: 10px;
-        color: #87BBA2;
+        color: black;
         text-align: left;
-        font-size: 1em;
+        font-size: 2em;
     }
     /*TECH INTEREST LIST*/
     .interests li {
         margin-left: 20px;
-        color: #87BBA2;
+        color: black;
         text-align: left;
     }
     .Goals {
@@ -166,35 +170,49 @@
         padding-top: 0.5rem;
         font-size: 1rem;
     }
+    .card-item {
+        position: relative;
+        /* Add this line */
+        overflow: hidden;
+        /* Add this line to prevent overflow issues */
+    }
     .card-overlay {
-        z-index: 2;
-        content: '';
+        /* Remove these lines */
+        /* position: absolute; */
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        /* pointer-events: none; */
+        /* Add these lines */
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
         visibility: hidden;
-        width: 100%;
-        /* Adjust the width as needed */
         text-align: center;
-        /* Center the text horizontally */
+    }
+    .card-overlay p {
+        color: white;
     }
     .card-img-link:hover+div.card-overlay {
         visibility: visible;
     }
     #author-picture {
+        margin: 0 auto;
+        width: 70%;
         position: relative;
     }
     #author-picture img {
         height: 300px;
-        width: 60%;
+        width: 100%;
         top: 0;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
     }
     #author-picture .button {
         position: absolute;
@@ -210,9 +228,16 @@
     }
     #photo-credit {
         position: absolute;
-        top: 320px;
-        right: 5px;
+        top: 300px;
+        right: 0%;
         background-color: white;
+        margin-bottom: 100px;
+    }
+    .interests li {
+        font-size: 2em;
+    }
+    .interests {
+        padding-bottom: 30px;
     }
 }
 

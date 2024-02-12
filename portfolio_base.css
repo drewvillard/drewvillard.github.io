@@ -8,7 +8,8 @@
         margin: 0;
         padding: 0;
         height: 100%;
-        background-color: #F0F7EE;
+        background: linear-gradient(to top, #F0F7EE, white);
+        /* Linear gradient from #F0F7EE to white */
     }
     /* Unvisited link */
     
@@ -21,7 +22,7 @@
     /* Visited link */
     
     a:visited {
-        color: #FFA500;
+        color: #ff2f00;
         /* Maintain the same color for consistency */
     }
     /* Hover effect */
@@ -36,6 +37,9 @@
         color: #1E90FF;
         /* Dark blue on active/clicked state */
     }
+    /*
+    
+    */
     
     h2 {
         margin-left: 5pxg;
@@ -77,17 +81,34 @@
     body p {
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 1em;
+        font-size: 2em;
     }
     
     main {
-        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: linear-gradient(to bottom, #ccf9be, white);
+        /* Linear gradient from #F0F7EE to white */
+    }
+    
+    main p,
+    h2,
+    .interests {
+        margin: 50px 16% 0 16%;
     }
     
     header {
         text-align: left;
         color: #87BBA2;
         font-size: 2em;
+    }
+    
+    head {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
     }
     
     body,
