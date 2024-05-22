@@ -69,6 +69,8 @@
     }
     .highlight-body p {
         height: 100%;
+        margin: 0;
+        padding: 0;
         /* Increase top margin */
         font-size: 1.2em;
         font-family: 'Arial', sans-serif;
