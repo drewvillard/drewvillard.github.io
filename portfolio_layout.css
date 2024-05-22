@@ -25,6 +25,7 @@
         width: 100%;
     }
     .highlight-project {
+        position: relative;
         display: flex;
         flex-direction: column;
         flex: 1;
@@ -52,10 +53,12 @@
     .highlight-img {
         width: 100%;
         /* Ensure images take up full width of their container */
-        height: auto;
+        max-height: fit-content;
         /* Maintain aspect ratio */
         display: block;
         /* Remove inline spacing */
+        position: relative;
+        z-index: 1;
     }
     .highlight-body {
         flex: 1;
@@ -65,7 +68,8 @@
         overflow-y: auto;
         /* Add vertical scroll if content exceeds max height */
         justify-content: left;
-        margin-top: 5px;
+        margin-top: 20px;
+        bottom: 0;
     }
     .highlight-body p {
         height: 100%;
