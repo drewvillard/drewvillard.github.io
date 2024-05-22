@@ -7,7 +7,7 @@
 
 @media only screen and (min-width:768px) {
     /* .resume {
-        display: grid;
+        display: grid;+
         column-gap: 10px;
         grid-template-columns: 50% 50%;
         grid-template-rows: 33% 33%;
@@ -15,6 +15,88 @@
         row-gap: 10px;
         gap: 10px;
     } */
+    .project-section-header {
+        text-align: center;
+    }
+    .highlight-header {
+        text-align: center;
+    }
+    .highlights-container {
+        width: 100%;
+    }
+    .highlight-project {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 10px;
+        background-color: #f9f9f9;
+        /* Light gray background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow */
+        border-radius: 8px;
+        /* Rounded corners */
+        padding: 20px;
+        /* Add padding inside the box */
+    }
+    .highlights-list {
+        display: flex;
+        list-style-type: none;
+    }
+    .highlight-project:last-child {
+        margin-right: 0;
+        /* Remove margin from the last project */
+    }
+    .highlight-img-link {
+        display: block;
+    }
+    .highlight-img {
+        width: 100%;
+        /* Ensure images take up full width of their container */
+        height: auto;
+        /* Maintain aspect ratio */
+        display: block;
+        /* Remove inline spacing */
+    }
+    .highlight-body {
+        flex: 1;
+        /* Make highlight-body fill the remaining space */
+        max-height: 100%;
+        /* Set a maximum height */
+        overflow-y: auto;
+        /* Add vertical scroll if content exceeds max height */
+        justify-content: left;
+        margin-top: 5px;
+    }
+    .highlight-body p {
+        height: 100%;
+        /* Increase top margin */
+        font-size: 1.2em;
+        font-family: 'Arial', sans-serif;
+        /* Change the font family to Arial */
+        line-height: 1.6;
+        /* Increase line spacing */
+        text-align: left;
+        /* Align text to the left */
+    }
+    .highlights-container p {
+        max-height: 100px;
+        /* Set the maximum height */
+        overflow: auto;
+        /* Hide overflow content */
+        scroll-behavior: smooth;
+    }
+    h1 {
+        font-size: 2em;
+        /* Adjust heading size */
+        margin: 5px 0;
+        /* Adjust margin */
+    }
+    p {
+        font-size: 14px;
+        /* Adjust paragraph size */
+        margin: 5px 0;
+        /* Adjust margin */
+    }
     .scroll-container {
         overflow-x: auto;
         white-space: nowrap;
@@ -168,7 +250,7 @@
     }
     /*End Of Header Nav*/
     h2 {
-        text-align: left;
+        text-align: center;
         color: black;
         font-size: 3em;
     }
